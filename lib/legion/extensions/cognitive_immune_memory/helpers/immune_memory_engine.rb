@@ -120,28 +120,28 @@ module Legion
 
           def immune_report
             {
-              total_cells:           @memory_cells.size,
-              active_cells:          active_cells.size,
-              t_cells:               t_cells.size,
-              b_cells:               b_cells.size,
-              veteran_cells:         veteran_cells.size,
-              total_encounters:      @encounters.size,
+              total_cells:             @memory_cells.size,
+              active_cells:            active_cells.size,
+              t_cells:                 t_cells.size,
+              b_cells:                 b_cells.size,
+              veteran_cells:           veteran_cells.size,
+              total_encounters:        @encounters.size,
               secondary_response_rate: secondary_response_rate,
-              neutralization_rate:   neutralization_rate,
-              average_response_speed: average_response_speed,
-              threat_coverage:       threat_coverage,
-              overall_health:        overall_health,
-              health_label:          health_label
+              neutralization_rate:     neutralization_rate,
+              average_response_speed:  average_response_speed,
+              threat_coverage:         threat_coverage,
+              overall_health:          overall_health,
+              health_label:            health_label
             }
           end
 
           def to_h
             {
-              total_cells:      @memory_cells.size,
-              active:           active_cells.size,
-              encounters:       @encounters.size,
-              health:           overall_health,
-              threat_coverage:  threat_coverage
+              total_cells:     @memory_cells.size,
+              active:          active_cells.size,
+              encounters:      @encounters.size,
+              health:          overall_health,
+              threat_coverage: threat_coverage
             }
           end
 

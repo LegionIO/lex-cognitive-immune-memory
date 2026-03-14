@@ -12,7 +12,8 @@ module Legion
           attr_reader :id, :threat_type, :threat_signature, :severity,
                       :response_type, :response_speed, :outcome, :created_at
 
-          def initialize(threat_type:, threat_signature:, severity: 0.5, response_type: :primary, response_speed: PRIMARY_RESPONSE_SPEED, outcome: :neutralized)
+          def initialize(threat_type:, threat_signature:, severity: 0.5, response_type: :primary,
+                         response_speed: PRIMARY_RESPONSE_SPEED, outcome: :neutralized)
             @id = SecureRandom.uuid
             @threat_type = threat_type.to_sym
             @threat_signature = threat_signature.to_s
